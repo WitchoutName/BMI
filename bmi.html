@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BMI calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="jumbotron text-center" style="background-color: lightblue;">
+      <h1 style="font-size:60px;">BMI Calculator</h1>
+      <h1 style="font-size:30px; color: grey;">BMI = Body Mass Index</h1>
+    </header>  
+    <body style="background-color: rgb(236, 236, 236)">
+      <div class="row"> 
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3 row">
+          <p class="col-sm-8 text-center" style="padding-top: 10px; font-size: 20px;"><b>Weight:</b></p>
+          <input id="weight" value="70" type="number" class="col-sm-4" style="font-size: 20px;">
+          <div class="col-sm-12 row" style="margin-top: 7px; margin-left:0px; padding:0px;">
+            <p class="col-sm-8 text-center" style="padding-top: 10px; font-size: 20px;"><b>Height:</b></p>
+            <input id="height" value="175" type="number" class="col-sm-4" style="font-size: 20px;">
+          </div>
+        </div>
+          <div class="col-sm-1 row">
+              <p class="col-sm-12" style="padding-top: 15px; font-size: 20px;"><b>kg</b></p>
+              <p class="col-sm-12" style="padding-top: 15px; font-size: 20px;"><b>cm</b></p>
+          </div>
+          <div class="col-sm-2 text-center">
+            <button id="button" style="padding: 40px; font-size: 30px;">Calculate</button>
+          </div>
+          <div class="col-sm-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 text-center row" style="margin-top:50px;">
+          <h1 class="col-sm-12" id="bmiText" style="font-size:50px;"></h1>
+          <table class="col-sm-12" style="margin-top:50px;">
+            <thead>
+              <tr>
+                <th>BMI</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0 - 18.4</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Normal weight</td>
+              </tr>
+              <tr>
+                <td>25 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td>30 - 39.9</td>
+                <td>Obesity</td>
+              </tr>
+              <tr>
+                <td>40+</td>
+                <td>Extreme obesity</td>
+              </tr>
+            </tbody>
+          </table>
+          </p>
+        </div>
+
+        <div class="col-sm-4"></div>
+      </div>
+      
+    </body>
+    <footer>
+
+    </footer>
+    <style>
+
+      	th{
+          border: darkslateblue 3px solid;
+        }
+        td {
+          border-collapse: collapse;
+          border: darkslateblue 2px solid;
+        }
+    </style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="java.js"></script>
+</body>
+</html>
+
