@@ -9,10 +9,8 @@ button.addEventListener("click", function(){
  
 function CalculateBMI(){
    let res = weight.value / ((height.value / 100) * (height.value / 100)) 
-   if(height.value >= 0 && weight.value >= 0){
-   alert(height.value, weight.value);
+   if(height.value >= 0 && weight.value >= 0)
    return Math.floor(res * 100) / 100;
-   }
     else
    return "not real";
 }
